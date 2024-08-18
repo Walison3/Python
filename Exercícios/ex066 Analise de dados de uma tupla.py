@@ -1,0 +1,15 @@
+total = ()
+n1 = int(input('Digite um número: '))
+n2 = int(input('Digite outro número: '))
+n3 = int(input('Digite mais número: '))
+n4 = int(input('Digite o último número: '))
+total += (n1, n2, n3, n4)
+print(f'Você digitou os valores {total}.')
+print(f'O valor {n1} apareceu {total.count(n1)} vezes.')
+print(f'O valor {n2} apareceu na {total.index(n2)+1}ª posicão')
+pares = ()
+print('Os valores pares digitados foram', end=' ')
+for c in total:
+    if c % 2 == 0:
+        pares += (c,)
+        print(f'{c}.', end=' ')
